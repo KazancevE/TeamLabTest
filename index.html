@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <link type="text/css" rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="border calculator">
+        <div class="top">
+            <form name="form" class="input border">
+                <input name="table" type="text" class="input__field" readonly>
+            </form>
+
+        </div>
+        <div class="bot">
+            <div  class="left">
+                <div class="item block border" onclick="memoryClear()">MC</div>
+                <div class="item block border" onclick="memorySave()">MS</div>
+                <div class="item block border" onclick="memoryRead()">MR</div>
+                <div class="item block border" onclick="memorySum()">M+</div>
+                <div class="item block border" onclick="memorySub()">M-</div>
+            </div>
+            <div class="right">
+                <div></div>
+                <div class="item block border" onclick="clean()">C</div>
+                <div class="item block border">AC</div>
+                <div class="item block border" onclick="back()">&larr;</div>
+                <div class="item block no-shadow">Rvt</div>
+                <div class="item block border" onclick="insert(7)">7</div>
+                <div class="item block border" onclick="insert(8)">8</div>
+                <div class="item block border" onclick="insert(9)">9</div>
+                <div class="item block border" onclick="insert(`/`)">/</div>
+                <div class="item block border" onclick="insert(`(`)">(</div>
+                <div class="item block border" onclick="insert(4)">4</div>
+                <div class="item block border" onclick="insert(5)">5</div>
+                <div class="item block border" onclick="insert(6)">6</div>
+                <div class="item block border" onclick="insert(`*`)">*</div>
+                <div class="item block border" onclick="insert(`)`)">)</div>
+                <div class="item block border" onclick="insert(1)">1</div>
+                <div class="item block border" onclick="insert(2)">2</div>
+                <div class="item block border" onclick="insert(3)">3</div>
+                <div class="item block border" onclick="insert(`-`)">-</div>
+                <div class="item block border equal" onclick="equal()">=</div>
+                <div class="item block border" onclick="insert(0)">0</div>
+                <div class="item block border" onclick="insert(`.`)">.</div>
+                <div class="item block border" onclick="invert()">+/-</div>
+                <div class="item block border" onclick="insert(`+`)">+</div>
+            </div>
+        </div>
+        <script src="index.js"> </script>
+    </div>
+</body>
+</html>
